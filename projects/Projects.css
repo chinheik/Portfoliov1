@@ -4,7 +4,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-image: url(png/bg.png);
+  background-image: url(../png/bg.png);
   background-size: cover;
 }
 /* nav bar */
@@ -44,30 +44,7 @@ body {
 .nbr-content {
   font-size: 16px;
 }
-
 .nbr a:hover {
   transform: scale(1.2);
 }
 /* nav bar */
-/* main content */
-.main-content {
-  height: 80vh;
-  display: flex;
-  align-items: center;
-}
-.mcl {
-  font-family: Montserrat, sans-serif;
-  font-weight: bolder;
-  font-size: 70px;
-  width: 50%;
-  margin-left: 15vh;
-}
-.mcr {
-  width: 30%;
-  padding-left: 5vh;
-}
-.coding {
-  width: 50vh;
-}
-
-/*main content*/

@@ -4,7 +4,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-image: url(png/bg.png);
+  background-image: url(../png/bg.png);
   background-size: cover;
 }
 /* nav bar */
@@ -44,7 +44,6 @@ body {
 .nbr-content {
   font-size: 16px;
 }
-
 .nbr a:hover {
   transform: scale(1.2);
 }
@@ -55,19 +54,25 @@ body {
   display: flex;
   align-items: center;
 }
+
+h1 {
+  font-size: 70px;
+}
 .mcl {
   font-family: Montserrat, sans-serif;
-  font-weight: bolder;
-  font-size: 70px;
   width: 50%;
   margin-left: 15vh;
 }
+
 .mcr {
   width: 30%;
-  padding-left: 5vh;
-}
-.coding {
-  width: 50vh;
+  padding-left: 10vh;
 }
 
+.soccer {
+  width: 50vh;
+}
+.nbr a:hover {
+  transform: scale(1.2);
+}
 /*main content*/
