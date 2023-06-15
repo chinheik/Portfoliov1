@@ -10,7 +10,7 @@ body {
 /* nav bar */
 .navbar {
   height: 10vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   background-color: transparent;
   justify-content: space-between;
@@ -23,12 +23,12 @@ body {
   display: flex;
   align-items: center;
   margin-left: 5vh;
-  font-size: 20px;
 }
 .nbl-content,
 .nbr-content {
   text-decoration: none;
   color: black;
+  font-size: 18px;
 }
 
 .portfolio {
@@ -40,9 +40,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-}
-.nbr-content {
-  font-size: 16px;
 }
 
 .nbr a:hover {
@@ -64,10 +61,65 @@ body {
 }
 .mcr {
   width: 30%;
-  padding-left: 5vh;
+  padding-left: 15vh;
 }
 .coding {
   width: 50vh;
 }
 
 /*main content*/
+/* RWD for max width 600px */
+@media screen and (max-width: 600px) {
+  /* nav bar */
+  .navbar {
+    height: 15vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nbl {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+  }
+  .nbr {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .nbl-content,
+  .nbr-content {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+  }
+
+  .portfolio {
+    padding-left: 0.5vh;
+    color: #9e957f;
+  }
+
+  .nbr-content {
+    margin: 0 1vw;
+  }
+  /* main content */
+  .main-content {
+    flex-direction: column;
+    height: 70vh;
+    align-items: center;
+  }
+  .mcl {
+    font-size: 30px;
+    width: 80%;
+    margin: 5vh 0;
+    text-align: center;
+  }
+  .mcr {
+    width: 80%;
+    padding: 0;
+  }
+  .coding {
+    width: 100%;
+  }
+}
