@@ -23,7 +23,6 @@ body {
   display: flex;
   align-items: center;
   margin-left: 5vh;
-  font-size: 20px;
 }
 .nbl-content,
 .nbr-content {
@@ -41,9 +40,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
 }
-.nbr-content {
-  font-size: 16px;
-}
+
 .nbr a:hover {
   transform: scale(1.2);
 }
