@@ -1,126 +1,85 @@
-html,
-body {
-  height: 100%;
-  width: 100%;
+* {
   margin: 0;
   padding: 0;
-  background-image: url(../png/bg.png);
-  background-size: cover;
-}
-/* nav bar */
-.navbar {
-  height: 10vh;
-  width: 100%;
-  display: flex;
-  background-color: transparent;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  font-family: Montserrat, sans-serif;
-}
-.nbl {
-  width: 25%;
-  display: flex;
-  align-items: center;
-  margin-left: 5vh;
-}
-.nbl-content,
-.nbr-content {
+  box-sizing: border-box;
   text-decoration: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+:root {
+  --bg-color: rgb(6, 9, 24);
+  --font-family-Rubik400: "Rubik Mono One", sans-serif;
+  --font-family-Montserrat900: "Montserrat", sans-serif;
+  /* #06091880 */
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+/* Nav Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2.5rem 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  font-family: var(--font-family-Rubik400);
+  background-color: var(--bg-color);
+}
+.nbleft {
+  position: relative;
+  font-size: 3.5rem;
+  margin: left 3.5rem;
+}
+.nbright {
+  position: relative;
+}
+.nbright a {
+  font-size: 3rem;
+  margin-left: 2rem;
+}
+
+.navbar a {
+  color: white;
+}
+/* Nav Bar */
+/* Main Content-HOME */
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+
+.home-content {
+  font-size: 3rem;
   color: black;
+  font-family: var(--font-family-Montserrat900);
 }
 
-.portfolio {
-  padding-left: 0.5vh;
-  color: #9e957f;
+.home-content #typewriter {
+  font-size: 4rem;
 }
-.nbr {
-  width: 40%;
+.home {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-evenly;
+  padding: 0 9%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.nbr a:hover {
-  transform: scale(1.2);
-}
-/* nav bar */
-/* main content */
-.main-content {
-  height: 80vh;
-  display: flex;
-  align-items: center;
-}
-
-.mcl {
-  font-family: Montserrat, sans-serif;
-  font-weight: bolder;
-  font-size: 70px;
-  width: 50%;
-  margin-left: 15vh;
-}
-
-.mcr {
-  width: 30%;
-  padding-left: 15vh;
-}
 .coding {
-  width: 50vh;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  width: 40%;
+  height: 80%;
+  background: url("./png/coding.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 98;
 }
-
-/*main content*/
-/* RWD for max width 600px */
-@media screen and (max-width: 600px) {
-  /* nav bar */
-  .navbar {
-    height: 15vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .nbl {
-    width: 100%;
-    justify-content: center;
-    margin: 0;
-  }
-  .nbr {
-    width: 100%;
-    justify-content: center;
-    margin: 0;
-  }
-
-  .nbl-content,
-  .nbr-content {
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-  }
-
-  .portfolio {
-    padding-left: 0.5vh;
-    color: #9e957f;
-  }
-
-  .nbr-content {
-    margin: 0 1vw;
-  }
-  /* main content */
-  .main-content {
-    flex-direction: column;
-    height: 70vh;
-    align-items: center;
-  }
-  .mcl {
-    font-size: 30px;
-    width: 80%;
-    margin: 5vh 0;
-    text-align: center;
-  }
-  .mcr {
-    width: 80%;
-    padding: 0;
-  }
-  .coding {
-    width: 100%;
-  }
-}
+/* Main Content-HOME */
