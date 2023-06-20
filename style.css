@@ -17,6 +17,10 @@ html {
   overflow-x: hidden;
 }
 
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
 /* Nav Bar */
 .navbar {
   position: fixed;
@@ -29,12 +33,12 @@ html {
   align-items: center;
   z-index: 99;
   font-family: var(--font-family-Rubik400);
-  background-color: var(--bg-color);
+  background-color: rgba(6, 9, 24, 0.7);
+  backdrop-filter: blur(10px);
 }
 .nbleft {
   position: relative;
   font-size: 3.5rem;
-  margin: left 3.5rem;
 }
 .nbright {
   position: relative;
@@ -49,10 +53,6 @@ html {
 }
 /* Nav Bar */
 /* Main Content-HOME */
-section {
-  min-height: 100vh;
-  padding: 10rem 9% 2rem;
-}
 
 .home-content {
   font-size: 3rem;
@@ -68,7 +68,6 @@ section {
   justify-content: space-between;
   align-items: center;
   padding: 0 9%;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .coding {
@@ -83,3 +82,32 @@ section {
   z-index: 98;
 }
 /* Main Content-HOME */
+/* Content-ABOUT*/
+.about {
+  background-color: var(--bg-color);
+  color: white;
+}
+
+.about h1 {
+  position: relative;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  font-family: var(--font-family-Rubik400);
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10rem;
+}
+
+#aboutWord {
+  font-family: var(--font-family-Montserrat900);
+  font-size: 3rem;
+  max-width: 50%;
+}
+/* Content-ABOUT*/
+
+/* Content-PROJECT */
+/* Content-PROJECT */
