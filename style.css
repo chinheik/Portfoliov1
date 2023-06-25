@@ -99,7 +99,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 10rem;
 }
 
 #aboutWord {
@@ -242,3 +241,140 @@ section {
   background: var(--main-color);
 }
 /* Content-PROJECT */
+/* FOOTER PAGE */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  font-family: var(--font-family-Montserrat900);
+}
+
+.footer-text p {
+  font-size: 1.6rem;
+}
+
+.footer-icon button {
+  height: 4rem;
+  border-radius: 50%;
+  width: 4rem;
+  background-color: rgba(6, 9, 24, 0.7);
+  cursor: pointer;
+}
+
+.footer-icon a {
+  color: white;
+  font-weight: 900;
+}
+
+/* FOOTER PAGE */
+
+/* Media-width: 1200px*/
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+/* Media-width: 1200px*/
+
+/* Media-width: 200px */
+@media screen and (max-width: 820px) {
+  html {
+    font-size: 45%;
+  }
+
+  section {
+    padding: 10rem 4% 2rem;
+    min-height: 50vh;
+  }
+
+  .home {
+    padding: 0 4%;
+  }
+
+  .footer {
+    padding: 2rem 4%;
+  }
+
+  .project {
+    padding: 2rem 4%;
+  }
+
+  .coding {
+    display: none;
+  }
+
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+}
+/* Media-width: 820px */
+/* Media-width: 576px */
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 10%;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  button {
+    display: none;
+  }
+
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 250px));
+    gap: 2rem;
+  }
+
+  .threed {
+    display: none;
+  }
+
+  .navbar {
+    padding: 2% 2%;
+  }
+
+  section {
+    padding: 5% 5%;
+    min-height: 50vh;
+  }
+
+  .about-content {
+    display: block;
+    margin-top: 50px;
+  }
+  #aboutWord {
+    max-width: 100%;
+    font-size: 15px;
+  }
+  #aboutWord h1 {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .home {
+    display: block;
+    text-align: center;
+  }
+
+  .code {
+    display: none;
+  }
+  .home-content {
+    font-size: 20px;
+    padding-top: 120px;
+  }
+
+  .home-content #typewriter {
+    font-size: 20px;
+  }
+}
+
+/* Media-width: 576px */
