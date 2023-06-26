@@ -174,17 +174,16 @@ section {
 
 .project-container {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 350px));
+  grid-template-columns: repeat(2, minmax(0, 450px));
   gap: 2rem;
 }
 
 .project-box {
   position: relative;
-  /* width: 35rem;
-  height: 35rem; */
   overflow: hidden;
   border-radius: 2rem;
   margin: 20px;
+  height: 100%;
 }
 
 .project-box img {
@@ -206,10 +205,12 @@ section {
   background-image: linear-gradient(
     180deg,
     hsla(0, 0%, 0%, 0) 0%,
-    var(--main-color)
+    var(--bg-color)
   );
   backdrop-filter: blur(0.4rem);
   transition: all 0.4s ease-in-out;
+  color: white;
+  font-family: var(--font-family-Montserrat900);
 }
 
 .project-box:hover .project-content {
@@ -227,19 +228,17 @@ section {
   font-size: 1.5rem;
 }
 
-.project-content .btn:nth-child(2) {
-  border: 0.2rem solid var();
-  background: var();
-  color: var();
+.project-content .btn {
+  border: 0.2rem solid white;
+  background: white;
+  color: black;
+  border-radius: 0.5rem;
 }
 
-.project-content .btn:nth-child(2):hover {
-  color: var();
+.project-content .btn:hover {
+  color: rgb(83, 52, 52);
 }
 
-.project-content .btn:nth-child(2)::before {
-  background: var(--main-color);
-}
 /* Content-PROJECT */
 /* FOOTER PAGE */
 .footer {
