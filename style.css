@@ -320,6 +320,7 @@ section {
 
   .footer {
     flex-direction: column;
+    margin-top: 10rem;
   }
 
   button {
@@ -329,7 +330,7 @@ section {
   .project-container {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 250px));
-    gap: 2rem;
+    gap: 10rem;
   }
 
   .threed {
